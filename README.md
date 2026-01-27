@@ -1,4 +1,4 @@
-# AI Cookbooks - Skill Index
+# AI Skill Index
 
 A curated collection of AI-powered workflows and skills that can be used with Claude AI assistants, Antigravity, and other AI agent platforms. Each skill is a self-contained module with scripts, documentation, and examples for specific use cases.
 
