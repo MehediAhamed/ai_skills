@@ -46,6 +46,7 @@ uv run scripts/simple_travel_brochure.py --city "Paris, France"
 | Workflow | Description |
 |----------|-------------|
 | [Travel Destination Brochure](travel-destination-brochure/README.md) | Build travel destination scenarios and brochures from a city name. Fetches street-level and landmark imagery from OpenStreetCam and Wikimedia Commons, then uses VLM Run (vlmrun) to generate a travel video and a travel plan. **Use with Claude:** Reference the `travel-destination-brochure` skill when users want travel brochures, destination guides, travel videos, or travel planning for a city. **Use with Antigravity:** Navigate to `travel-destination-brochure/` and run `uv run scripts/simple_travel_brochure.py --city "City Name"`. |
+| [Pitch Deck Generator](pitch-deck-generator/README.md) | Generate investor-ready pitch decks from a structured startup brief using VLM Run (vlmrun). Produces markdown deck (titles, bullets, speaker notes), optional multi-page PDF pitch document, and optional hero/slide images. **Use with Claude:** Reference the `pitch-deck-generator` skill when users want pitch decks, investor decks, or startup presentations. **Use with Antigravity:** Navigate to `pitch-deck-generator/`, fill `inputs/startup_brief.txt`, then run `vlmrun chat -p inputs/startup_brief.txt "Create a VC-ready pitch deck..." -o ./pitch_deck_output`. |
 
 ## 🛠️ Prerequisites
 
@@ -174,18 +175,8 @@ Add your skill to the table in this README.md:
 skill/
 ├── README.md                          # This file - main index
 ├── .gitignore                         # Git ignore rules
-├── travel-destination-brochure/       # Example skill folder
-│   ├── README.md                      # User documentation
-│   ├── SKILL.md                       # Agent documentation
-│   ├── .env_template                  # Environment variable template
-│   ├── scripts/                       # Python scripts
-│   │   ├── geocode_city.py
-│   │   ├── fetch_openstreetcam.py
-│   │   └── simple_travel_brochure.py
-│   └── references/                    # API documentation
-│       ├── openstreetcam_api.md
-│       └── commons_api.md
-└── [other-skills]/                    # Additional skills...
+├── travel-destination-brochure/       # 
+├── pitch-deck-generator/
 ```
 
 ## 🤝 Contributing
