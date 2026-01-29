@@ -1,3 +1,0 @@
-# Pitch deck generator: vlmrun for content/images, python-pptx for slides
-vlmrun[cli]
-python-pptx>=0.6.21
